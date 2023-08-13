@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h1{
+    font-size: 1.5rem;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 60px 0;
+    text-transform: capitalize;
+
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+
+#search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0 ,0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #686565;
+}
+
+#search-btn{
+    padding: 10px 20px;
+    background-color: #138065;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0 ,0.2);
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+
+.image{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.image-result{
+    height: 100%;
+    width: 30%;
+   margin: 0 0 60px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0 ,0.2);
+    overflow: hidden;
+}
+
+.image-result img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+   transition: opacity 0.2s ease-in-out ;
+   transition: scale 0.5s ease-in-out ;
+
+   
+}
+
+.image-result:hover img{
+    opacity: 0.8;
+    transform: scale(108%) ;
+}
+
+.image-result a{
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-transform: capitalize;
+
+
+}
+
+#show-more-btn{
+    background-color: #008cba;
+    font-size: 0.8rem;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .image{
+        padding: 20px;
+    }
+    .image-result{
+        width: 45%;
+    }
+}
+
+
+
+@media screen and (max-width:480px){
+
+   
+    .image-result{
+        width: 100%;
+    }
+}
