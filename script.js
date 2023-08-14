@@ -1,4 +1,3 @@
-const accessKey = "213eQWDYugDeiSGlNljQ6-GLaBc0gdQHTU0z2KgwFV0";
 const formEl = document.querySelector("form");
 const inputEl = document.getElementById("search-input");
 const searchResult = document.querySelector(".image");
